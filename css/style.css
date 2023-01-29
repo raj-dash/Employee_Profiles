@@ -7,6 +7,17 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || UTILITY CLASSES */
+.nowrap {
+  white-space: nowrap;
+}
+
 /* || GENERAL STYLES */
 body {
   font: 1.5rem "Nunito", sans-serif;
