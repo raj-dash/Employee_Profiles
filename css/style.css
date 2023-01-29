@@ -107,20 +107,36 @@ footer {
 
 /* || SMALL */
 @media screen and (min-width: 576px) {
-  body {
-    background-color: green;
-    background-image: radial-gradient(whitesmoke, green);
+  main {
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem;
   }
-  nav {
-    display: none;
+
+  .card {
+    width: min(100%, 400px);
+  }
+  .card:last-child {
+    order: -1;
   }
 }
 
 /* || MEDIUM */
 @media screen and (min-width: 768px) {
-  body {
-    background-color: gold;
-    background-image: radial-gradient(whitesmoke, gold);
+  nav {
+    display: none;
+  }
+  .card {
+    width: min(100%, 320px);
+  }
+  .card figure {
+    flex-flow: column-reverse;
+  }
+  .card figcaption {
+    margin: 0.1em 0;
+  }
+  .card p{
+    margin-top: 1rem;
   }
 }
 
